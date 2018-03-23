@@ -1,0 +1,9 @@
+{
+  "name": "git-helpers",
+  "private": true,
+  "repository": "git@github.com:shnhrrsn/git-helpers.git",
+  "devDependencies": {
+    "eslint": "^3",
+    "eslint-config-grind": "^2.0.4"
+  }
+}

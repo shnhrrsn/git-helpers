@@ -1,0 +1,4 @@
+[alias]
+	pick = "!~/.git-helpers/bin/pick"
+	amend = "!~/.git-helpers/bin/amend"
+	continue = "!~/.git-helpers/bin/continue"
