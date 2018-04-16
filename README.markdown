@@ -81,6 +81,12 @@ Lists commits in release note format from oldest to newest.
 
 ---
 
+### summary
+
+Total of lines of code in the current HEAD by author.  Supports flags passed to `git blame` such as `-w`, `--indent-heuristic` and `--compaction-heuristic`.
+
+---
+
 ### undo-commit
 
 ~= `git reset --soft HEAD~1`

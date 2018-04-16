@@ -7,4 +7,5 @@
 	ls = !git log-short
 	pick = "!~/.git-helpers/bin/pick"
 	release-notes = log --pretty=format:'* %s' --abbrev-commit --reverse
+	summary = "!~/.git-helpers/bin/summary"
 	undo-commit = reset --soft HEAD~1
