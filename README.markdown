@@ -43,6 +43,12 @@ Maintains the original author/date when editing commits during a rebase, rather 
 
 ---
 
+### follow
+
+[A better `git blame`](https://blog.andrewray.me/a-better-git-blame/) that allows you to follow changes in a file throughout it’s history.
+
+---
+
 ### log-short / ls
 
 An abbreviated output of `git log` that displays a single line per-commit with the sha1, author, message and age.
