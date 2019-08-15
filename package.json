@@ -3,7 +3,7 @@
   "private": true,
   "repository": "git@github.com:shnhrrsn/git-helpers.git",
   "devDependencies": {
-    "eslint": "^3",
-    "eslint-config-grind": "^2.0.4"
+    "eslint": "^6.1.0",
+    "eslint-config-grind": "^2.3.0"
   }
 }
