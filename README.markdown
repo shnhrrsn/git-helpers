@@ -19,8 +19,8 @@ Maintains the original author/date and doesn’t prompt for a commit message by 
 
 #### Arguments
 
-* _optional_ `--name=` override the author/committer name
-* _optional_ `--email=` override the author/committer email
+- _optional_ `--name=` override the author/committer name
+- _optional_ `--email=` override the author/committer email
 
 ---
 
@@ -38,8 +38,8 @@ Maintains the original author/date when editing commits during a rebase, rather 
 
 #### Arguments
 
-* _optional_ `--name=` override the author/committer name
-* _optional_ `--email=` override the author/committer email
+- _optional_ `--name=` override the author/committer name
+- _optional_ `--email=` override the author/committer email
 
 ---
 
@@ -55,8 +55,8 @@ An abbreviated output of `git log` that displays a single line per-commit with t
 
 #### Aliases
 
-* log-short
-* ls
+- log-short
+- ls
 
 ---
 
@@ -68,10 +68,10 @@ Maintains the original author/date when cherry-picking commits, rather than rese
 
 #### Arguments
 
-* **required** `sha1` hash to cherry-pick
-* or **required** `--continue` if the previous `git pick` command failed due to conflict, once resolved, you can use `git pick --continue`
-* _optional_ `--name=` override the author/committer name
-* _optional_ `--email=` override the author/committer email
+- **required** `sha1` hash to cherry-pick
+- or **required** `--continue` if the previous `git pick` command failed due to conflict, once resolved, you can use `git pick --continue`
+- _optional_ `--name=` override the author/committer name
+- _optional_ `--email=` override the author/committer email
 
 ---
 
@@ -83,7 +83,7 @@ Lists commits in release note format from oldest to newest.
 
 ### summary
 
-Total of lines of code in the current HEAD by author.  Supports flags passed to `git blame` such as `-w`, `--indent-heuristic` and `--compaction-heuristic`.
+Total of lines of code in the current HEAD by author. Supports flags passed to `git blame` such as `-w`, `--indent-heuristic` and `--compaction-heuristic`.
 
 ---
 

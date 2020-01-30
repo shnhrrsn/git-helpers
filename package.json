@@ -2,8 +2,12 @@
   "name": "git-helpers",
   "private": true,
   "repository": "git@github.com:shnhrrsn/git-helpers.git",
-  "devDependencies": {
-    "eslint": "^6.1.0",
-    "eslint-config-grind": "^2.3.0"
+  "scripts": {
+    "code:format": "prettier --write **/*.js *.json *.yaml *.markdown",
+    "code:lint": "prettier --check **/*.js *.json *.yaml *.markdown"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "prettier": "^1.19.1"
   }
 }

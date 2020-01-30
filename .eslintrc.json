@@ -1,9 +1,0 @@
-{
-	"env": {
-		"node": true
-	},
-	"extends": "grind",
-	"parserOptions": {
-		"sourceType": "module"
-	}
-}
