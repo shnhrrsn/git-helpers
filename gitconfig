@@ -1,11 +1,11 @@
 [alias]
-	amend = "!~/.git-helpers/bin/amend"
+	amend = "!~/.git-helpers/cmd/amend.js"
 	branches = for-each-ref --sort=committerdate refs/heads/ --format="%1B[0;32m%(authordate:relative)%09%1B[0;34m%(objectname:short)%09%1B[0;33m%(refname:short)%1B[m %1B[0;30m<%(authorname)>%1B[m%09"
-	continue = "!~/.git-helpers/bin/continue"
+	continue = "!~/.git-helpers/cmd/continue.js"
 	log-short = log --pretty=format:'%Cred%h%Creset - %C(bold blue)%an%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %Creset' --abbrev-commit
 	follow = log -p -M --follow --stat
 	ls = !git log-short
-	pick = "!~/.git-helpers/bin/pick"
+	pick = "!~/.git-helpers/cmd/pick.js"
 	release-notes = log --pretty=format:'* %s' --abbrev-commit --reverse
-	summary = "!~/.git-helpers/bin/summary"
+	summary = "!~/.git-helpers/cmd/summary.js"
 	undo-commit = reset --soft HEAD~1
