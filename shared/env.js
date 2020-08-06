@@ -36,6 +36,8 @@ module.exports = {
 			GIT_COMMITTER_DATE: date,
 			GIT_COMMITTER_EMAIL: email,
 			GIT_COMMITTER_NAME: name,
+
+			HUSKY_SKIP_HOOKS: 1,
 		}
 
 		if (returnArgs) {
