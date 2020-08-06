@@ -17,3 +17,5 @@ pick = "!~/.git-helpers/cmd/pick.js"
 release-notes = log --pretty=format:'* %s' --abbrev-commit --reverse
 summary = "!~/.git-helpers/cmd/summary.js"
 undo-commit = reset --soft HEAD~1
+branch-from = "!~/.git-helpers/cmd/branch-from.js"
+pick-into = "!~/.git-helpers/cmd/pick-into.js"

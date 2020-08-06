@@ -1,5 +1,30 @@
 # git-helpers
 
+<!-- TOC -->
+
+- [git-helpers](#git-helpers)
+	- [Installation](#installation)
+	- [Commands](#commands)
+		- [amend](#amend)
+					- [Arguments](#arguments)
+		- [branches](#branches)
+		- [continue](#continue)
+			- [Arguments](#arguments)
+		- [follow](#follow)
+		- [log-short / ls](#log-short--ls)
+			- [Aliases](#aliases)
+		- [pick](#pick)
+			- [Arguments](#arguments)
+		- [release-notes](#release-notes)
+		- [summary](#summary)
+		- [undo-commit](#undo-commit)
+		- [branch-from](#branch-from)
+					- [Arguments](#arguments)
+		- [pick-into](#pick-into)
+					- [Arguments](#arguments)
+
+<!-- /TOC -->
+
 ## Installation
 
 ```bash
@@ -9,7 +34,7 @@ echo '[include]' >> ~/.gitconfig
 echo '    path = ~/.git-helpers/gitconfig' >> ~/.gitconfig
 ```
 
-## Documentation
+## Commands
 
 ### amend
 
@@ -92,3 +117,39 @@ Total of lines of code in the current HEAD by author. Supports flags passed to `
 ~= `git reset --soft HEAD~1`
 
 Reverts the last commit without losing any changes.
+
+---
+
+### branch-from
+
+`branch-from` creates a new branch from a set of commits. By default this branch will be created based on `origin/master`, however you can change the base branch via the `onto` argument.
+
+All current changes, including untracked, will be stashed and then restored once this command finishes.
+
+File times will also be snapshotted before any actions are taken and then restored after the command finishes.
+
+#### Arguments
+
+- _optional_ `--dry` test run to view commands, won’t actually modify git
+- _optional_ `--push` push branch to origin
+- _optional_ `--force` deletes branch if exists + force pushes to origin
+- _required_ `--branch [name]` name of the branch to create
+- _optional_ `--onto [branch]` defaults to `origin/master`
+- _required_ `--pick [hash]` commit hash or range of hashes to pick into the new branch; can be used multiple times
+
+---
+
+### pick-into
+
+`pick-into` is similar to [`branch-from`](#branch-from), however it works by using an existing branch rather than creating a new one.
+
+All current changes, including untracked, will be stashed and then restored once this command finishes.
+
+File times will also be snapshotted before any actions are taken and then restored after the command finishes.
+
+#### Arguments
+
+- _optional_ `--dry` test run to view commands, won’t actually modify git
+- _optional_ `--push` push branch to origin
+- _required_ `--branch [name]` name of the branch to pick commits into
+- _required_ `--pick [hash]` commit hash or range of hashes to pick into the new branch; can be used multiple times
